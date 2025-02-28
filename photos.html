@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #f4f4f4;
+      }
+      .container {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          background: white;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      img, video {
+          width: 100%;
+          margin-top: 10px;
+      }
+  </style>
+  </head>
+  
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html" onclick="toggleMenu()">Juan Fernández Cerezo</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Juan Fernández Cerezo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h2>Gallery of Photos & Videos</h2>
+      <img src="./assets/Foto_rugby.jpeg" alt="Rugby">
+      <img src="./assets/GBR.png" alt="Carrera Guadalajara Bike Race">
+      <img src="./assets/alcoy.png" alt="Hotal Alcoy">
+      <img src="./assets/DJI_0096.JPG" alt="Hotal Alcoy">
+      <img src="./assets/DJI_0062.jpg" alt="Roche">
+      <video controls>
+          <source src="./assets/video-sin-titulo-hecho-con-clipchamp-5_cbh9uJcZ.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+      </video>  
+      <video controls>
+          <source src="./assets/Vídeo sin título ‐ Hecho con Clipchamp (3) (1).mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+      </video>
+  </div>
+</body>
+</html>
+
