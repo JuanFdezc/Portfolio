@@ -376,6 +376,8 @@ article .icon {
 
 #projects {
   position: relative;
+  height: auto;
+  min-height: 96vh;
 }
 
 .color-container {
@@ -385,8 +387,9 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: auto;
-  height: 300px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   position: relative;
 }
 
@@ -406,6 +409,86 @@ article .icon {
   align-items: center;
 }
 
+/* Override about-containers inside #projects to allow wrapping grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+/* CERTIFICATIONS SECTION */
+
+#certifications {
+  position: relative;
+  height: auto;
+  min-height: 96vh;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cert-card {
+  background: white;
+  border: 0.1rem solid rgb(163, 163, 163);
+  border-radius: 1.5rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+  cursor: default;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: rgb(100, 100, 100);
+}
+
+.cert-logo-wrapper {
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #f0f0f0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.cert-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cert-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(53, 53, 53);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.cert-btn {
+  width: auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
 
 /* CONTACT */
 
