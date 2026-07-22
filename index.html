@@ -1,450 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Juan Fernández Cerezo</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Juan Fernández Cerezo</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Juan Fernández Cerezo</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Imagen1.jpg" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Juan Fernández Cerezo</h1>
+      <p class="section__text__p2">Computer Engineer + Business Analyst</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV - Juan.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/juan-fdez-cerezo/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/juan-fernandez-cerezo'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Student <br />Several Internships (See Resume)</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree<br />Business Analytics + Data Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            👨🏻‍💻I am Juan, a proactive, hard-working, self-taught person who loves to be in constant learning. I am a
+            graduate of a university degree in Business Analytics and I am studying my last year of Computer
+            Engineering, two booming fields.
+            📊 My goal is to use my knowledge in data analysis and technology to obtain and provide valuable information
+            in different areas of society.
+          </p>
+          <p>
+            🚁⚽ I am a passionate of sports and drones. Also I love to travel and discover new places and cultures.
+          </p>
+        </div>
+        <div class="button-container">
+          <button class="photos-button" onclick="location.href='./photos.html'">Photos & Videos</button>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SAS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MATLAB</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Word</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PowerPoint</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Excel</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Power BI</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tableau</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ML</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AI</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+  
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/Imagen2.jpg" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Prediction Madrid</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/JuanFdezc/TFG-BA'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Defensa.pdf')">
+            PPT
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/Imagen3.jpg" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Analysis of vending machine sales</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiNDFjNzdhMmUtZjBmNy00ZmMwLTkwZjEtYTM0ODkzNjJkOGVkIiwidCI6IjU4MThjMTAzLWI0ZmYtNGFiNi04YzA1LWRjMmZiNjk5M2JjMCIsImMiOjh9'">
+            POWER BI
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Trabajo_SAS.pdf')">
+            Document
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/Imagen2.png" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">coups d'état</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Analisis_R.R')">
+            Code R
+          </button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/Trabajo Análisis de los golpes de Estado.pdf')">
+            Document
+          </button>
+        </div>
+      </div>
+
+      <!-- SOM -->
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/project_som.png" alt="SOM Pokemon" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">SOM — Pokémon Clustering</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/juan-fernandez-cerezo/SOM-Pokemon-Clustering'">
+            Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Perceptron & MLP 
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/project_perceptron.png" alt="Perceptron MLP Game of Thrones" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Perceptron &amp; MLP — Game of Thrones</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/juan-fernandez-cerezo'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="alert('Document not uploaded yet')">
+            Document
+          </button>
+        </div>
+      </div>
+      -->
+
+      <!-- CNN & Transfer Learning 
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/project_cnn.png" alt="CNN Transfer Learning Chest X-Ray" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">CNN &amp; Transfer Learning — Chest X-Rays</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/juan-fernandez-cerezo'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="alert('Document not uploaded yet')">
+            Document
+          </button>
+        </div>
+      </div>
+      -->
+
+      <!-- Genetic Algorithm 
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/project_genetic.png" alt="Genetic Algorithm" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Genetic Algorithm</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/juan-fernandez-cerezo'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="alert('Document not uploaded yet')">
+            Document
+          </button>
+        </div>
+      </div>
+      -->
+
+      <!-- Multi-agent AI System -->
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/project_multiagent.png" alt="Multi-agent AI System" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Multi-agent AI System — Financial Research</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/juan-fernandez-cerezo/Financial-Multi-agent-AI-System/'">
+            Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Face Emotion Recognition -->
+      <div class="details-container color-container">
+        <div class="project-container">
+          <img src="./assets/project_face_emotion.png" alt="Face Emotion Recognition" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Computer Vision — Face Emotion Recognition</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/juan-fernandez-cerezo/Computer-Vision-Face-Emotion-Recognition-CNN-vs-Transfer-learning'">
+            Github
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#certifications'" />
+  </section>
+  <section id="certifications">
+    <p class="section__text__p1">My Credentials</p>
+    <h1 class="title">Certifications</h1>
+    <div class="certifications-grid">
+
+      <!-- SAS Programming 1 -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/SAS_logo.png" alt="SAS logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">SAS Programming 1: Essentials</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- SAS Programming 2 -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/SAS_logo.png" alt="SAS logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">SAS Programming 2: Data Manipulation Techniques</h3>
+        <button class="btn btn-color-2 cert-btn"
+          onclick="window.open('./assets/Certificate_of_Completion_SAS_Programming_2_Data_Manipulation_Techniques.pdf')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- MATLAB Onramp -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/MATLAB_logo.jpg" alt="MATLAB logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">MATLAB Onramp</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- MATLAB Symbolic Math -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/MATLAB_logo.jpg" alt="MATLAB logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">Introduction to Symbolic Math with MATLAB</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- Zertia Generative AI -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/Zertia_logo.jpg" alt="Zertia logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">Generative AI</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- DataCamp R Basics -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/Datacamp_logo.png" alt="DataCamp logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">Data Science: R Basics</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- McKinsey Forward -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/Mckinsey_logo.png" alt="McKinsey logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">McKinsey Forward Program</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- Power BI -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/PowerBI_logo.jpg" alt="Power BI logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">Microsoft Power BI</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+      <!-- AESA Drone -->
+      <div class="cert-card">
+        <div class="cert-logo-wrapper">
+          <img src="./assets/AESA_logo.png" alt="AESA logo" class="cert-logo" />
+        </div>
+        <h3 class="cert-title">Drone Pilot A1-A3 (AESA)</h3>
+        <button class="btn btn-color-2 cert-btn" onclick="alert('PDF not uploaded yet')">
+          &#8681; Download
+        </button>
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:juanfercer@gmail.com">juanfercer@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/juan-fdez-cerezo/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    
-    <nav id="hamburger-nav">
-      <div class="logo">Juan Fernández Cerezo</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Imagen1.jpg" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Juan Fernández Cerezo</h1>
-        <p class="section__text__p2">Computer Engineer + Business Analyst</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/CV - Juan.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/juan-fdez-cerezo/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/juan-fernandez-cerezo'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Student <br />Several Internships (See Resume)</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br/>Business Analytics + Data Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              👨🏻‍💻I am Juan, a proactive, hard-working, self-taught person who loves to be in constant learning. I am a graduate of a university degree in Business Analytics and I am studying my last year of Computer Engineering, two booming fields.
-              📊 My goal is to use my knowledge in data analysis and technology to obtain and provide valuable information in different areas of society.
-            </p>
-            <p>
-              🚁⚽ I am a passionate of sports and drones. Also I love to travel and discover new places and cultures.
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="photos-button" onclick="location.href='./photos.html'">Photos & Videos</button>
-          </div>          
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
-    <section id="skills">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SAS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MATLAB</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Word</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PowerPoint</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Excel</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Power BI</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tableau</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AI</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="project-container">
-              <img
-                src="./assets/Imagen2.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Prediction Madrid</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/JuanFdezc/TFG-BA'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Defensa.pdf')"
-              >
-                PPT
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="project-container">
-              <img
-                src="./assets/Imagen3.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Analysis of vending machine sales</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiNDFjNzdhMmUtZjBmNy00ZmMwLTkwZjEtYTM0ODkzNjJkOGVkIiwidCI6IjU4MThjMTAzLWI0ZmYtNGFiNi04YzA1LWRjMmZiNjk5M2JjMCIsImMiOjh9'"
-              >
-              POWER BI
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Trabajo_SAS.pdf')"
-              >
-                Document
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="project-container">
-              <img
-                src="./assets/Imagen2.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">coups d'état</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Analisis_R.R')"
-              >
-                Code R
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Trabajo Análisis de los golpes de Estado.pdf')"
-              >
-                Document
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:juanfercer@gmail.com">juanfercer@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/juan-fdez-cerezo/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p> &#169; 2025 Juan Fernandez Cerezo</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p> &#169; 2026 Juan Fernandez Cerezo</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
