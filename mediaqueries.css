@@ -10,6 +10,12 @@
   #projects {
     height: fit-content;
   }
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -99,5 +105,8 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
