@@ -338,8 +338,10 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skills {
   position: relative;
+  height: auto;
+  padding-bottom: 8rem;
 }
 
 .experience-sub-title {
